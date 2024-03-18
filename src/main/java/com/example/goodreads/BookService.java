@@ -15,12 +15,12 @@ public class BookService implements BookRepository {
         hmap.put(r1.getId(), r1);
         hmap.put(r2.getId(), r2);
         hmap.put(r3.getId(), r3);
+    }
 
-        @Override
-        public ArrayList<Book> getBooks(){
-            Collection<Book> booksCollection = hmap.values();
-            ArrayList<Book> books = new ArrayList<>(booksCollection);
-            return books;
-        }
+    @Override
+    public ArrayList<Book> getBooks(){
+        Collection<Book> booksCollection = hmap.values();
+        ArrayList<Book> books = new ArrayList<>(booksCollection);
+        return books;
     }
 }
